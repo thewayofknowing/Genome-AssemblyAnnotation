@@ -1,4 +1,4 @@
-# Genome-AssemblyAnnotation
+# Genome Assembly & Annotation
 This is the code repository for course module Genome Assembly (473637) and Annotation (SBL.30004)  as part of Bioinformatics masters at University of Bern.
 
 Broad goals are as follows:
