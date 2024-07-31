@@ -11,7 +11,10 @@
 WORKDIR=/storage/homefs/kk22w918/Assembly
 polish_output_folder=$WORKDIR/3.1-Polishing
 
+# Polish the flye assembly
 java -Xmx64g -jar $WORKDIR/pilon-1.24.jar --genome 2-Assembly/Flye/flye_assembly.fasta --bam $polish_output_folder/flye.sorted.bam --outdir $polish_output_folder/pilon-flye/
+
+# Polish the canu assembly
 java -Xmx64g -jar $WORKDIR/pilon-1.24.jar --genome 2-Assembly/Canu/pacbio_canu.contigs.fasta --bam $polish_output_folder/canu.sorted.bam --outdir $polish_output_folder/pilon-canu/
 
 

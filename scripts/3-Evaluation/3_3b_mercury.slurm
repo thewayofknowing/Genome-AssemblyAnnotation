@@ -30,24 +30,22 @@ output_canu=canu
 canu_pilon_assembly=$WORKDIR/3.1-Polishing/pilon-canu/pilon.fasta
 output_canu_polished=canu_polished
 
-# Run one at a time 
-
 # Flye original
 output_dir=$output_folder/$output_flye
 cd $output_dir
 merqury.sh $meryl_folder/ERR3624577.meryl  $flye_assembly $output_flye
 
 # Flye polished
-# output_dir=$output_folder/$output_flye_polished
-# cd $output_dir
-# merqury.sh $meryl_folder/ERR3624577.meryl  $pilon_flye_assembly $output_flye_polished
+output_dir=$output_folder/$output_flye_polished
+cd $output_dir
+merqury.sh $meryl_folder/ERR3624577.meryl  $pilon_flye_assembly $output_flye_polished
 
 # Canu original
-# output_dir=$output_folder/$output_canu
-# cd $output_dir
-# merqury.sh $meryl_folder/ERR3624577.meryl  $canu_assembly $output_canu
+output_dir=$output_folder/$output_canu
+cd $output_dir
+merqury.sh $meryl_folder/ERR3624577.meryl  $canu_assembly $output_canu
 
 # Canu polished
-# output_dir=$output_folder/$output_canu_polished
-# cd $output_dir
-# merqury.sh $meryl_folder/ERR3624577.meryl  $canu_pilon_assembly $output_canu_polished
+output_dir=$output_folder/$output_canu_polished
+cd $output_dir
+merqury.sh $meryl_folder/ERR3624577.meryl  $canu_pilon_assembly $output_canu_polished

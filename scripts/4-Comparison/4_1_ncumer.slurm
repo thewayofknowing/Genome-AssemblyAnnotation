@@ -21,13 +21,13 @@ OUTDIR=$WORKDIR/4-Comparison
 cd $OUTDIR
 
 # Run 1. Ref v. Flye
-# nucmer --prefix=ref_flye --breaklen 1000 --mincluster 1000 $REFERENCE $FLYE_POLISHED/pilon.fasta
+nucmer --prefix=ref_flye --breaklen 1000 --mincluster 1000 $REFERENCE $FLYE_POLISHED/pilon.fasta
 
 # Run 1. Ref v. Flye Unpolished
 nucmer --prefix=ref_flye_unpolished --breaklen 1000 --mincluster 1000 $REFERENCE $WORKDIR/2-Assembly/Flye/flye_assembly.fasta
 
 # Run 2. Ref  vs Canu
-# nucmer --prefix=ref_canu --breaklen 1000 --mincluster 1000 $REFERENCE $CANU_POLISHED/pilon.fasta
+nucmer --prefix=ref_canu --breaklen 1000 --mincluster 1000 $REFERENCE $CANU_POLISHED/pilon.fasta
 
 # Run 3. Flye vs. Canu
-# nucmer --prefix=flye_canu --breaklen 1000 --mincluster 1000 $FLYE_POLISHED/pilon.fasta $CANU_POLISHED/pilon.fasta
+nucmer --prefix=flye_canu --breaklen 1000 --mincluster 1000 $FLYE_POLISHED/pilon.fasta $CANU_POLISHED/pilon.fasta

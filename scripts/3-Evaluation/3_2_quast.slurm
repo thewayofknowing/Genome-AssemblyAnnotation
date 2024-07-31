@@ -17,6 +17,7 @@ FLYE_POLISHED=$POLISHED_DIR/pilon-flye
 READ_DIR=$WORKDIR/reads/pacbio
 REFERENCE_DIR=$WORKDIR/references
 
+# Running quast without reference
 quast.py $FLYE_POLISHED/pilon.fasta \
         $CANU_POLISHED/pilon.fasta \
         -1 $READ_DIR//ERR3415819.fastq.gz \
@@ -27,6 +28,7 @@ quast.py $FLYE_POLISHED/pilon.fasta \
         --threads 16 --no-sv \
         --output-dir $WORKDIR/3.4-Quast/wo_reference
 
+# Running quast with reference
 quast.py $FLYE_POLISHED/pilon.fasta \
         $CANU_POLISHED/pilon.fasta \
         -1 $READ_DIR//ERR3415819.fastq.gz \

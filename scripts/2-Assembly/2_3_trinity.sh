@@ -11,6 +11,7 @@ WORKDIR=/storage/homefs/kk22w918/Assembly
 READ_DIR=$WORKDIR/reads/RNAseq
 OUTPUT_DIR=$WORKDIR/2-Assembly/Trinity
 
+# Run trinity container on Illumina reads data
 singularity exec -e /storage/homefs/kk22w918/trinityrnaseq.v2.15.1.simg  Trinity \
         --seqType fq --output $OUTPUT_DIR \
         --left $READ_DIR/SRR1584462_1.fastq.gz \

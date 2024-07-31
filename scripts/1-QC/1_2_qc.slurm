@@ -14,7 +14,7 @@ illumina_reads_folder=/storage/homefs/kk22w918/Assembly/reads/Illumina
 pacbio_reads_folder=/storage/homefs/kk22w918/Assembly/reads/pacbio
 fastqc_output_folder=/storage/homefs/kk22w918/Assembly/1-QC/
 
-#FASTQC OF ALL FASTQ FILES
+#FASTQC of all fastq data
 fastqc -t 2 $illumina_reads_folder/*.fastq.gz -o $fastqc_output_folder/Illumina/
 fastqc -t 2 $pacbio_reads_folder/*.fastq.gz -o $fastqc_output_folder/pacbio/
 
